@@ -1,0 +1,279 @@
+/* NAV BAR */
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    margin-left: -10px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #B4E7CE;
+    border-style: solid;
+    border-color: #474A2C;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.nav {
+    float: center;
+    font-size: 15px;
+}
+
+.nav a {
+    display: block;
+    color: #474A2C ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+  }
+  
+.nav a:hover {
+    background-color: #59A96A;
+    color: #474A2C;
+  }
+
+/* ALL */
+.margin{
+  margin-top: 60px;
+}
+
+/* HOME */
+.header {
+  background-color: #9BDEAC;
+  color: #474A2C;
+  font-family: 'Lora', serif;
+  padding: 20px 50px 20px 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-radius: 25px;
+  border: 3px solid #474A2C;
+}
+
+h1 {
+  text-align: center;
+}
+
+.logo-size{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #636940;
+}
+
+.home-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.what-we-are{
+  background-color: #59A96A;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  justify-content: center;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+}
+
+.times {
+  background-color: #9BDEAC;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* CONTACT */
+.resource-color {
+  background-color: #636940;
+  color: white;
+}
+
+.resize {
+  width: 1000px;
+  margin: auto;
+}
+.end {
+  display: flex;
+  flex-direction: column;
+  background-color: #B4E7CE;
+  margin-top: 20px;
+  /* margin-left: -10px;
+  margin-right: -10px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+/* instagram logo */
+.fa {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #59A96A;
+  color: white;
+}
+ 
+/* email */
+.email {
+  margin-left: 20px;
+  background: #59A96A;
+  color: white;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-align{
+  text-align: center;
+}
+
+/* FAQ */
+.faq-color {
+  background-color: #B4E7CE;
+  color: #636940;
+}
+
+.faq-format {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #9BDEAC;
+}
+
+.bottom {
+  margin: 10px 10px 10px 10px;
+  width: 500px;
+  border: 3px #636940 solid;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.question {
+  font-weight: 700;
+}
+
+/* dd container */
+.dropdown {
+  display: inline-block;
+  position: relative;
+  outline: none;
+  margin: 10px 10px 10px 10px;
+  width: 500px;
+  border: 3px #636940 solid;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* button */
+.dropbtn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #9BDEAC;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  border-radius: 2px;
+  transition: 0.35s ease-out;
+}
+.dropbtn:hover {
+  background-color: #59A96A;
+}
+
+/* dd content */
+.dropdown .dropdown-content {
+  position: absolute;
+  top: 50%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100000;
+  padding: 10px;
+  margin-left: -13px;
+  background-color: #9BDEAC;
+  transition: 0.35s ease-out;
+  width: 490px;
+  border: 3px #636940 solid;
+  border-top: #9BDEAC;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.dropdown-content .mi:hover::before {
+    opacity: 1;
+}
+
+/* show dd content */
+.dropdown:focus .dropdown-content {
+  outline: none;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(20px);
+}
+
+/* mask to close menu by clicking on the button */
+.dropdown .db2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+.dropdown:focus .db2 {
+  display: inline-block;
+}
+.dropdown .db2:focus .dropdown-content, .dropdown-content .db3:focus .dropdown-content {
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.plus-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-align {
+  margin-bottom: 60px;
+}
+
+.top-margin-faq {
+  margin-top: 5px;
+}
